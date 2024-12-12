@@ -4,131 +4,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CDN bootstrap -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- CDN Iconos -->
+    <!-- Iconos -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- tipo de fuente -->
+    <!-- Fuente personalizada -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
-    <!-- favicon -->
+    <!-- Favicon -->
     <link rel="shortcut icon" href="/assets/img/code-square.svg" type="image/x-icon">
-    <!-- hoja estilos -->
-    <link rel="stylesheet" href="styles.css">
-    <title>Atena Valverde Lopez</title>
+    <style>
+        body {
+            background-color: #b4d3e6; /* Fondo claro */
+        }
+
+        header {
+            background-color: #83abc7; /* Tono azul claro para la barra superior */
+        }
+
+        .navbar-brand span {
+            color: #060707; /* Texto del logo en azul */
+        }
+    </style>
+    <title>Mi Portafolio - Mariana Santiago Ramírez</title>
 </head>
 
 <body>
-    <!-- menu-var -->
-    <header class="header">
-        <div class="px-3 py-2 text-bg-dark border-bottom">
-            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto">
-                    <i id="item" class="bi bi-code-square p-4 fs-1 m-2"></i>
-                </a>
-                <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-                    <li><a href="#presentacion" class="nav-link">Conóceme</a></li>
-                    <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
-                    <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
-                    <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
-                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+    <!-- Menú de navegación -->
+    <header class="shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="bi bi-code-square fs-1 me-2 text-primary"></i>
+                <span class="fw-bold">Mi Portafolio</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#presentacion">Conóceme</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
                 </ul>
             </div>
-        </div>
+        </nav>
     </header>
 
-    <!-- presentación -->
-    <main>
-        <div class="hero" id="presentacion">
-            <div class="px-4 py-5 my-5 text-center">
-                <img class="d-block mx-auto mb-4 rounded-circle" 
-                     src="assets/img/ate.jpeg" 
-                     alt="Atena Valverde Lopez" 
-                     style="width: 300px; height: 400px;">
-                <h1 class="display-5 fw-bold text-body-emphasis">Atena Valverde Lopez</h1>
-                <!-- Texto animado -->
-                <h2 id="app"></h2>
-                <div class="col-lg-6 mx-auto">
-                    <p class="lead mb-4">Hola, mi nombre es Atena Valverde López y soy estudiante del Tecnológico de Estudios Superiores de Chimalhuacán (TESCHI), estudio la carrera de Ingeniería en Sistemas Computacionales.
-                        Me considero una persona perseverante, organizada y con pasión por aprender. Disfruto enfrentar retos que me permiten crecer tanto académica como personalmente. Lo que más me entusiasma del desarrollo de
-                        software es el diseño de interfaces, ya que me da la oportunidad de mezclar
-                        creatividad con funcionalidad para crear experiencias atractivas e intuitivas. 
-                        También valoro el compromiso con los detalles y la posibilidad de innovar en cada proyecto que realizo.</p>
-                    <button type="button" class="btn btn-outline-secondary">Mi CV</button>
+    <!-- Sección de presentación -->
+    <main class="text-dark">
+        <section class="py-5 text-center" id="presentacion">
+            <div class="container">
+                <img class="rounded-circle shadow mb-4" src="assets/img/yo.jpeg" alt="Mariana Santiago Ramírez"
+                    style="width: 200px; height: 200px;">
+                <h1 class="fw-bold">Mariana Santiago Ramírez</h1>
+                <h2 id="app" class="text-muted mb-3"></h2>
+                <p class="lead">Hola, mi nombre es Mariana Santiago Ramírez.Soy entusiasta, creativa y comprometida 
+                    con la mejora continua. Disfruto diseñar soluciones que reflejen tanto calidad como originalidad.</p>
+                <a href="#" class="btn btn-primary mt-2">Descargar CV</a>
+            </div>
+        </section>
+
+       <!-- Habilidades -->
+<section id="habilidades" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Habilidades</h2>
+        <div class="row text-center">
+            <div class="col-md-6">
+                <div class="p-4 shadow rounded">
+                    <i class="bi bi-lightbulb fs-1 text-warning"></i>
+                    <h5 class="mt-3">Innovación Tecnológica</h5>
+                    <p>Capacidad para integrar tecnologías emergentes en soluciones innovadoras, aplicando inteligencia artificial en proyectos como chatbots y análisis de datos.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="p-4 shadow rounded">
+                    <i class="bi bi-puzzle fs-1 text-warning"></i>
+                    <h5 class="mt-3">Soluciones Integrales</h5>
+                    <p>Desarrollo y gestión de sistemas completos que abarcan desde la concepción de la idea hasta la implementación, optimizando procesos y mejorando la eficiencia empresarial.</p>
                 </div>
             </div>
         </div>
-
-<!-- Nueva sección de habilidades -->
-<div id="habilidades" class="habilidades container px-4 py-5">
-  <h2 class="pb-2 border-bottom">Habilidades</h2>
-  <div class="row row-cols-1 row-cols-md-2 g-4">
-      <div class="col">
-          <div class="card h-100 text-center shadow-lg hover-shadow">
-              <i class="bi bi-palette fs-1 py-3"></i>
-              <div class="card-body">
-                  <h5 class="card-title">Diseño Web </h5>
-                  <p class="card-text">Creación de páginas web atractivas utilizando HTML, CSS y conocimientos de diseño visual.</p>
-              </div>
-          </div>
-      </div>
-      <div class="col">
-          <div class="card h-100 text-center shadow-lg hover-shadow">
-              <i class="bi bi-file-earmark-code fs-1 py-3"></i>
-              <div class="card-body">
-                  <h5 class="card-title">Programación </h5>
-                  <p class="card-text">Aprendizaje de los fundamentos de la programación con lenguajes como JavaScript, Python, enfocado en la resolución de problemas.</p>
-              </div>
-          </div>
-      </div>
-  </div>
-</div>
-
-<!-- Nueva sección de proyectos -->
-<div id="proyectos" class="proyectos container my-5">
-  <h2 class="pb-2 border-bottom">Proyectos</h2>
-  <div class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="col">
-          <div class="card h-100 shadow-lg hover-shadow">
-              <img src="/assets/img/clon_p.jpeg" class="card-img-top rounded" alt="Clon de Pinterest">
-              <div class="card-body">
-                  <h5 class="card-title">Clon de Pinterest</h5>
-                  <p class="card-text">Desarrollo de un proyecto, donde la finalidad fue replicar pinterest.</p>
-                  <a href=" https://ateval.github.io/Portafolio/" target="_blank" class="btn btn-outline-primary">Ver Proyecto</a>
-              </div>
-          </div>
-      </div>
-      <div class="col">
-          <div class="card h-100 shadow-lg hover-shadow">
-              <img src="/assets/img/PrimeraPagina.png" class="card-img-top rounded" alt="Mi primera página web">
-              <div class="card-body">
-                  <h5 class="card-title">DjangoAPI</h5>
-                  <p class="card-text">Mi prier proyecto usando github y Django.</p>
-                  <a href="https://github.com/ateval/DjangoAPI.git" target="_blank" class="btn btn-outline-primary">Ver Proyecto</a>
-              </div>
-          </div>
-      </div>
-  </div>
-</div>
-
-        <!-- Contacto -->
-        <div id="contacto" class="container my-5 text-center">
-            <div class="p-4 border rounded-3 bg-light">
-                <h2 class="mb-4">Contacto</h2>
-                <p class="mb-4">"Soy estudiante y me encantaría colaborar en proyectos de desarrollo de software. ¡No dudes en contactarme!".</p>
-                <a href="mailto:atenavalop05@gmail.com" class="btn btn-outline-secondary">Contactame</a>
+    </div>
+</section>
+<!-- Proyectos -->
+<section id="proyectos" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Proyectos</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="p-4 shadow rounded h-100">
+                    <img src="/assets/img/mi_pinterest.jpeg" class="card-img-top rounded" alt="Clon de Pinterest">
+                    <div class="card-body">
+                        <h5 class="card-title">Clon de Pinterest</h5>
+                        <p class="card-text">Creación de un clon de Pinterest, donde los usuarios pueden explorar y guardar imágenes, replicando las funcionalidades principales de la plataforma.</p>
+                        <a href="https://mari1702.github.io/Pin_mari/" target="_blank" class="btn btn-outline-primary">Ver Proyecto</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-4 shadow rounded h-100">
+                    <img src="/assets/img/mi_portafolio.jpeg" class="card-img-top rounded" alt="Mi Página">
+                    <div class="card-body">
+                        <h5 class="card-title">Mi Primera Página</h5>
+                        <p class="card-text">Esta es mi primera página web personal, donde comparto información sobre mí, mis proyectos y mis intereses. ¡Mi primer paso en el mundo digital!</p>
+                        <a href="" target="_blank" class="btn btn-outline-primary">Ver Proyecto</a>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+</section>
+
+
+
+        <!-- Contacto -->
+        <section id="contacto" class="py-5 text-center bg-white">
+            <div class="container">
+                <h2>Contacto</h2>
+                <p class="text-muted">Soy estudiante y me encantaría colaborar en proyectos de desarrollo de software. ¡No dudes en contactarme!</p>
+                <a href="mailto:marianasantiago708@gmail.com" class="btn btn-outline-secondary">Contáctame</a>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
-    <footer class="py-4 bg-dark text-light">
-        <div class="container text-center">
-            <p class="mb-1">&copy; 2024 Atena Valverde López</p>
-            <p>Creado durante el Bootcamp de <a href="https://tecnolochicas.mx/" class="text-decoration-none text-light">TecnolochicasPro</a></p>
-        </div>
+    <footer class="py-3 bg-dark text-light text-center">
+        <p>&copy; 2024 Mariana Santiago Ramírez</p>
+        <p>Creado durante el Bootcamp de <a href="https://tecnolochicas.mx/" class="text-decoration-none text-light">TecnolochicasPro</a></p>
     </footer>
 
     <!-- Scripts -->

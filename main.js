@@ -5,13 +5,13 @@ document.addEventListener("DOMContentLoaded", function() {
         loop: true
     });
 
-    typewriter.typeString('Estudiante de ISC')
-        .pauseFor(2500)
-        .deleteAll()
-        .typeString('Si puedes soñarlo, puedes hacerlo...')
-        .pauseFor(2500)
-        .deleteAll()
-        .typeString('<strong>Comenzó como un sueño!</strong>')
-        .pauseFor(2500)
-        .start();
+    typewriter.typeString('Apasionada por la tecnología')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('Transformando ideas en soluciones...')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('<strong>El futuro está en tus manos!</strong>')
+    .pauseFor(2500)
+    .start();
 });

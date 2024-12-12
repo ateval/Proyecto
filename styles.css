@@ -9,5 +9,14 @@ body{
     transition: color 0.3s ease; 
   }
 .nav-link:hover {
-    color:rgb(255, 0, 234);
+    color:rgb(0, 140, 255);
   }
+  /* Efectos en recuadros */
+.p-4.shadow:hover,
+.card:hover {
+    background-color: #96b6d3; /* Fondo más claro */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra adicional */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    cursor: pointer; /* Cambia el cursor a interactivo */
+    transition: all 0.3s ease; /* Transición suave */
+}
